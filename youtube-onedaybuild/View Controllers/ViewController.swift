@@ -29,6 +29,26 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         model.getVideos()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // confirm that video was selected
+        guard tableView.indexPathForSelectedRow != nil else {
+           
+            return
+        }
+        
+        // get reference  to the video was tapped on
+        
+        let selectedVideo = videos[tableView.indexPathForSelectedRow!.row]
+        
+        // get a reference to detail view controller
+        let detailVC = segue.destination as! DetailViewController
+        
+        // set video property to dteail view controller
+        detailVC.video = selectedVideo
+        
+    }
+    
      // MARK: - model Delegate Methods
     
     func videoFetched(_ videos: [Video]) {

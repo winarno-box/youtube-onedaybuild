@@ -10,6 +10,8 @@
 		B73CFFB924D9A082002E932A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73CFFB824D9A082002E932A /* Response.swift */; };
 		B758903824DD740800AE8525 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758903724DD740800AE8525 /* VideoTableViewCell.swift */; };
 		B758904224DD9FEF00AE8525 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758904124DD9FEF00AE8525 /* CacheManager.swift */; };
+		B75FDF9E24E435EB00DF1472 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75FDF9D24E435EB00DF1472 /* DetailViewController.swift */; };
+		B75FDFA124E4435D00DF1472 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75FDFA024E4435D00DF1472 /* WebKit.framework */; };
 		B7894E7524D5994900269699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7894E7424D5994900269699 /* AppDelegate.swift */; };
 		B7894E7724D5994900269699 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7894E7624D5994900269699 /* SceneDelegate.swift */; };
 		B7894E7924D5994900269699 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7894E7824D5994900269699 /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 		B73CFFB824D9A082002E932A /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		B758903724DD740800AE8525 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		B758904124DD9FEF00AE8525 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		B75FDF9D24E435EB00DF1472 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B75FDFA024E4435D00DF1472 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B7894E7124D5994900269699 /* youtube-onedaybuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "youtube-onedaybuild.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7894E7424D5994900269699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7894E7624D5994900269699 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75FDFA124E4435D00DF1472 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				B7894E7824D5994900269699 /* ViewController.swift */,
+				B75FDF9D24E435EB00DF1472 /* DetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -93,11 +99,20 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		B75FDF9F24E4435D00DF1472 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B75FDFA024E4435D00DF1472 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B7894E6824D5994900269699 = {
 			isa = PBXGroup;
 			children = (
 				B7894E7324D5994900269699 /* youtube-onedaybuild */,
 				B7894E7224D5994900269699 /* Products */,
+				B75FDF9F24E4435D00DF1472 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +218,7 @@
 				B7FEFC5624D863A60085568F /* Model.swift in Sources */,
 				B7FEFC5224D85FC40085568F /* Constants.swift in Sources */,
 				B758903824DD740800AE8525 /* VideoTableViewCell.swift in Sources */,
+				B75FDF9E24E435EB00DF1472 /* DetailViewController.swift in Sources */,
 				B7FEFC5424D862D10085568F /* Video.swift in Sources */,
 				B73CFFB924D9A082002E932A /* Response.swift in Sources */,
 			);
